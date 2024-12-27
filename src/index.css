@@ -277,8 +277,25 @@ h2 {
 .action-btn:hover {
   opacity: 0.9;
 }
+/* For smaller screens (Mobile devices) */
 @media (max-width: 768px) {
+  /* Font size change */
   body {
-    font-size: 0.9rem; /* Mobile screen ke liye font size thoda chhota karenge */
+    font-size: 0.9rem;
+  }
+
+  /* Flexbox Layout for mobile */
+  .container {
+    flex-direction: column;
+  }
+
+  /* Sidebar full-width for mobile */
+  .sidebar {
+    width: 100%;
+  }
+
+  /* Adjust content padding */
+  .content {
+    padding: 10px;
   }
 }
