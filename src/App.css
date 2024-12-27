@@ -1,0 +1,8 @@
+.app-layout {
+  display: flex;
+}
+
+.content {
+  margin-left: 220px;
+  padding: 20px;
+}

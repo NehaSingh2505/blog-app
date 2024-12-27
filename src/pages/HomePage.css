@@ -1,0 +1,135 @@
+.homepage-container {
+    padding: 20px;
+  }
+  
+  .post-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    width: 400px;
+    height: 500px;
+  }
+  
+  .post-title {
+    font-family: cursive;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .post-content {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .toggle-read {
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  
+  .post-card div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .post-card div a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .post-card div a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Posts Container with Grid */
+  .posts-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for larger screens */
+    gap: 50px; /* Space between cards */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .posts-container {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+  
+    .post-card {
+      width: 100%; /* Adjust width to fit the container */
+      height: auto; /* Adjust height automatically */
+    }
+  }
+  
+  /* Post Card Styling */
+  .post-card {
+    width: 100%; /* Ensure post card fills the column */
+    border: 2px solid #9d155e;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: #f5dfe3;
+  }
+  
+  .post-card .post-content {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+  
+  .post-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    max-height: 250px; /* Limit image height */
+
+  }
+  
+  .post-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #970747;
+  }
+  
+  .post-content {
+    position: relative;
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .post-content.expanded-content {
+    max-height: 500px;
+  }
+  
+  .read-more-link {
+    color: rgb(48, 74, 225);
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  .read-more-btn {
+    color: #0caaff;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    background: none;
+  }
+  
